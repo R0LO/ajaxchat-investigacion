@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js"><head>
+	<title>Chat Global - viernes 2 pm - 2moons</title>
+	<meta name="generator" content="2Moons 2.4.git">
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/boilerplate.css">
+	<link rel="stylesheet" type="text/css" href="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/general.css">
+	<link rel="stylesheet" type="text/css" href="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery.css">
+	<link rel="stylesheet" type="text/css" href="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/toastr.min.css">
+	<link rel="stylesheet" type="text/css" href="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/validationEngine.jquery.css">
+	<link rel="stylesheet" type="text/css" href="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/all.min.css">
+	<link rel="shortcut icon" href="https://xnovaoriginal.com/favicon.ico" type="image/x-icon">
+	<script type="text/javascript">
+		var ServerTimezoneOffset = -18000;
+		var serverTime 	= new Date(2026, 2, 14, 6, 46, 58);
+		var startTime	= serverTime.getTime();
+		var localTime 	= serverTime;
+		var localTS 	= startTime;
+		var Gamename	= document.title;
+		var Ready		= "Listo";
+		var Skin		= "./styles/theme/gow/";
+		var Lang		= "es";
+		var head_info	= "Información";
+		var auth		= 0;
+		var days 		= ["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"] 
+		var months 		= ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"] ;
+		var tdformat	= "[D] [d] de [M] [H]:[i]:[s]";
+		var queryString	= "page=Chat";
+		var isPlayerCardActive	= "true";
+		setInterval(function() {
+			serverTime.setSeconds(serverTime.getSeconds()+1);
+		}, 1000);
+	</script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery.min.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery.cookie.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/toastr.min.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery.validationEngine.min.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/jquery.validationEngine-es.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/tooltip.js"></script>
+	<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/base.js"></script>
+	
+	
+	<script type="text/javascript">
+		$(function() {
+			
+		});
+	</script>
+</head>
+<body id="Chat" class="full">
+	<div id="tooltip" class="tip"></div>
+<div class="top-nav" align="center">
+	<div class="main_list_left">
+		<ul>
+			<li class="d-n"><a href="https://xnovaoriginal.com/game.php?page=Changelog" style="color: lime; font-weight: bold;">V2.4</a></li>
+			<li><a href="https://xnovaoriginal.com/game.php?page=overview"><i class="fas fa-home tooltip padding_navigation" data-tooltip-content="Visión general"></i></a></li>
+			<li><a href="https://xnovaoriginal.com/game.php?page=imperium"><i class="fas fa-globe tooltip padding_navigation" data-tooltip-content="Imperio"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=statistics"><i class="fas fa-chart-pie tooltip padding_navigation" data-tooltip-content="Estadísticas"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=Ranking"><i class="fas fa-list-ol tooltip padding_navigation" data-tooltip-content="Ranking De Usuarios"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=battleHall"><i class="fas fa-crosshairs tooltip padding_navigation" data-tooltip-content="Salon de la Fama"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=DepHall"><i class="fas fa-crosshairs tooltip padding_navigation" style="color: #FF7878 !important;" data-tooltip-content="Salon de la Fama"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=records"><i class="fas fa-chess-queen tooltip padding_navigation" data-tooltip-content="Records"></i></a></li>
+						
+			<li><a href="https://xnovaoriginal.com/game.php?page=messages"><i class="fas fa-envelope tooltip padding_navigation" data-tooltip-content="Mensajes"></i><span id="newmes" style="display:none;"> <span id="newmesnum">0</span></span></a></li>		</ul>
+	</div>
+	<a href="#" class="d-n"><i class="fas fa-caret-left" style="font-size: 20px; margin: 5px; vertical-align: sub;"></i></a>
+	<span id="planetSelectorWrapper" class="d-n">
+        <label for="planetSelector"></label>
+		<select id="planetSelector">
+			<option value="1580" selected="selected">Principal [3:238:3]</option>
+
+		</select>
+	</span>
+	<a href="#" class="d-n"><i class="fas fa-caret-right" style="font-size: 20px; margin: 5px; vertical-align: sub;"></i></a>
+	<div class="main_list_right">
+		<ul>
+			<li><a href="https://xnovaoriginal.com/game.php?page=WarAlly"><i class="fab fa-jira padding_navigation" style="color: #8C70FF !important"></i></a></li>
+			<li><a href="https://xnovaoriginal.com/game.php?page=Pvp"><i class="fab fa-jira padding_navigation" style="color: #FF9C70 !important"></i></a></li>
+			<li><a href="https://xnovaoriginal.com/game.php?page=techtree"><i class="fas fa-flask tooltip padding_navigation" data-tooltip-content="Tecnología"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=buddyList"><i class="fas fa-user-circle tooltip padding_navigation" data-tooltip-content="Amigos"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=banList"><i class="fas fa-user-times tooltip padding_navigation" data-tooltip-content="Sancionados"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=search"><i class="fas fa-search tooltip padding_navigation" data-tooltip-content="Buscador"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=board" target="forum"><i class="fas fa-comment-alt"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=Chat"><i class="fas fa-comments tooltip padding_navigation" data-tooltip-content="Chat Global"></i></a></li>			<li><a href="https://xnovaoriginal.com/game.php?page=settings"><i class="fas fa-wrench tooltip padding_navigation" data-tooltip-content="Configuración"></i></a></li>
+			<li class="d-n"><a href="https://xnovaoriginal.com/game.php?page=logout" class="tooltip" data-tooltip-content="Salir"><i class="fas fa-power-off padding_navigation" style="color: red !important;"></i></a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<table class="n-d-n" style="width: 100%">
+		<tbody><tr>
+			<td>
+				<label class="hamburger" for="toggle-menu"><i class="fas fa-bars"></i></label>
+			</td>
+			<td>
+				<span id="planetSelectorWrapper" class="n-d-n">
+					<label for="MplanetSelector"></label>
+					<select id="MplanetSelector">
+						<option value="1580" selected="selected">Principal [3:238:3]</option>
+
+					</select>
+				</span>
+			</td>
+			<td>
+				<a href="https://xnovaoriginal.com/game.php?page=logout" style="color: red;" class="tooltip" data-tooltip-content="Salir"><i class="fas fa-power-off fa-2x padding_navigation"></i></a>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<div id="header">
+											<div id="res-901" class="rn-block c-901 tooltip" data-tooltip-content="Metal&lt;br&gt;5.000&lt;br&gt;&lt;span style='color: lime;'&gt;40.000&lt;/span&gt;">
+					<div class="rn-block-ico i-901 ri"></div>            
+					<div class="rn-block-volume bga-901">
+						<div class="rn-block-filling bga-901 bar_901" style="width: 13%;"></div>
+						<div class="rn-block-count" id="current_metal" data-real="5000">5.000 <span class="d-n">[13%]</span> </div>
+					</div>
+				</div>
+																	<div id="res-902" class="rn-block c-902 tooltip" data-tooltip-content="Cristal&lt;br&gt;4.000&lt;br&gt;&lt;span style='color: lime;'&gt;40.000&lt;/span&gt;">
+					<div class="rn-block-ico i-902 ri"></div>            
+					<div class="rn-block-volume bga-902">
+						<div class="rn-block-filling bga-902 bar_902" style="width: 10%;"></div>
+						<div class="rn-block-count" id="current_crystal" data-real="4000">4.000 <span class="d-n">[10%]</span> </div>
+					</div>
+				</div>
+																	<div id="res-903" class="rn-block c-903 tooltip" data-tooltip-content="Deutério&lt;br&gt;0&lt;br&gt;&lt;span style='color: lime;'&gt;40.000&lt;/span&gt;">
+					<div class="rn-block-ico i-903 ri"></div>            
+					<div class="rn-block-volume bga-903">
+						<div class="rn-block-filling bga-903 bar_903" style="width: 0%;"></div>
+						<div class="rn-block-count" id="current_deuterium" data-real="0">0 <span class="d-n">[0%]</span> </div>
+					</div>
+				</div>
+																					<div id="res-911" class="rn-block c-911 tooltip" data-tooltip-content="Energía &lt;br&gt; 0&nbsp;/&nbsp;0">
+					<div class="rn-block-ico i-911 ri"></div>            
+					<div class="rn-block-volume bga-911">
+						<div class="rn-block-filling bga-911 bar_911"></div>
+						<div class="rn-block-count" id="current_energy" data-real="0">
+							0&nbsp;/&nbsp;0
+						</div>
+					</div>
+				</div>
+										<div class="heder_res_921">
+			<div id="res-921" class="rn-block c-921 tooltip" data-tooltip-content="Materia Oscura&lt;hr&gt;15.028">
+				<div class="rn-block-ico i-921 ri"></div>           
+				<div class="res-text-921">15,0&nbsp;K</div>
+			</div>
+		</div>
+					<div class="heder_res_921">
+			<div id="res-8000" class="rn-block c-8000 tooltip" data-tooltip-content="Droide constructor&lt;hr&gt;1">
+				<div class="rn-block-ico i-8000 ri"></div>           
+				<div class="res-text-921">1&nbsp;</div>
+			</div>
+		</div>
+					<div class="heder_res_921">
+			<div id="res-8001" class="rn-block c-8001 tooltip" data-tooltip-content="Droide Ingeniero&lt;hr&gt;1">
+				<div class="rn-block-ico i-8001 ri"></div>           
+				<div class="res-text-921">1&nbsp;</div>
+			</div>
+		</div>
+					<div class="heder_res_921">
+			<div id="res-8002" class="rn-block c-8002 tooltip" data-tooltip-content="Droide Cientifico&lt;hr&gt;1">
+				<div class="rn-block-ico i-8002 ri"></div>           
+				<div class="res-text-921">1&nbsp;</div>
+			</div>
+		</div>
+		
+	<div class="clear"></div>
+</div>
+	<script type="text/javascript">
+		var viewShortlyNumber	= 0;
+		var vacation			= 0;
+		$(function() {
+									            resourceTicker({
+		                available: 5000,
+		                limit: [0, "40000"],
+		                production: 0,
+		                valueElem: "current_metal",
+		                valuePoursent: "bar_901"
+		            }, true);
+													            resourceTicker({
+		                available: 4000,
+		                limit: [0, "40000"],
+		                production: 0,
+		                valueElem: "current_crystal",
+		                valuePoursent: "bar_902"
+		            }, true);
+													            resourceTicker({
+		                available: 0,
+		                limit: [0, "40000"],
+		                production: 0,
+		                valueElem: "current_deuterium",
+		                valuePoursent: "bar_903"
+		            }, true);
+																																										
+		});
+	</script>
+	<script src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/topnav.js"></script>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.urlpalnet').click( function(){
+		document.location = '?'+queryString+'&'+$(this).attr("url");
+	});			
+});
+</script>
+
+<input style="display:none;" type="checkbox" id="toggle-menu" role="button">
+<script type="text/javascript">
+    	setInterval(function() { AJAX() }, 5000);
+</script>
+<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/json.js"></script>
+<div id="leftmenu">
+	
+	<div id="indicators"><div id="attack" class="indicator"><div class="icoi"></div></div><div id="espionage" class="indicator"><div class="icoi"></div></div><div id="destruction" class="indicator"><div class="icoi"></div></div><div id="rocket" class="indicator"><div class="icoi"></div></div></div>
+
+	<div class="title" style="margin-top: 12px;" id="btn-tabs">
+		<button class="btn btn-success" style="width: auto;" onclick="NewTabs('.menu_content_left', '#btn-tabs', '#tab-1', this);"><span class="fas fa-chart-bar"></span> MC.1</button>
+		<button class="btn btn-primary btn-xs" style="width:auto;" onclick="NewTabs('.menu_content_left', '#btn-tabs', '#tab-2', this);"><span class="fas fa-cogs"></span>MOD</button>
+	</div>
+	<div class="menu_content_left">
+		<div id="tab-1" class="active-tab">
+			<a href="https://xnovaoriginal.com/game.php?page=buildings">Edificios</a>			<a href="https://xnovaoriginal.com/game.php?page=NewTech">Investigacion</a>			<a href="https://xnovaoriginal.com/game.php?page=Nh">Hangar</a>			<a href="https://xnovaoriginal.com/game.php?page=NewDef">Defensas</a>			<a href="https://xnovaoriginal.com/game.php?page=officier">Oficiales</a>			<a href="https://xnovaoriginal.com/game.php?page=Mistic">Místicos</a>			<a href="https://xnovaoriginal.com/game.php?page=fleetTable">Flotas</a>			<a href="https://xnovaoriginal.com/game.php?page=galaxy">Galaxia</a>			<a href="https://xnovaoriginal.com/game.php?page=alliance">Alianza</a>			<a href="https://xnovaoriginal.com/game.php?page=battleSimulator">Simulador</a>			<a href="javascript:OpenPopup('?page=notes', 'notes', 720, 300);">Notas</a>			<a href="https://xnovaoriginal.com/game.php?page=trader">Mercader</a>						<a href="https://xnovaoriginal.com/game.php?page=resources">Recursos</a>		</div>
+		<div id="tab-2" class="inactive-tab">
+			<a href="https://xnovaoriginal.com/game.php?page=Faccion">Facciones</a>			<a href="https://xnovaoriginal.com/game.php?page=Race">Razas</a>			<a href="https://xnovaoriginal.com/game.php?page=FindDebris">B.Escombros</a>			<a href="https://xnovaoriginal.com/game.php?page=Galactic">Galáctico</a>			<a href="https://xnovaoriginal.com/game.php?page=Arsenal">Arsenal</a>			<a href="https://xnovaoriginal.com/game.php?page=InfoBonus">I.Bonus</a>			<a href="https://xnovaoriginal.com/game.php?page=Logros">Logros</a>									<a href="https://xnovaoriginal.com/game.php?page=Encuesta">Encuestas</a>			<a href="https://xnovaoriginal.com/game.php?page=PirateMarket">Mercado Pirata</a>			<a href="https://xnovaoriginal.com/game.php?page=Auctioneer">Subastador</a>		</div>
+	</div>
+	<div>
+		<a href="https://xnovaoriginal.com/game.php?page=Donate" style="color:lime"><button class="btn btn-success" style="width: 99%; margin-top: 2px;">Donaciones</button></a>
+						<a href="https://xnovaoriginal.com/game.php?page=Vip"><button class="btn btn-dm" style="width: 99%; margin-top: 2px;">Suscripción VIP</button></a>
+							<a href="https://xnovaoriginal.com/game.php?page=bonus" style="font-weight: bold;"><button class="btn btn-dm" style="width: 99%; margin-top: 2px;">Bonus</button></a>
+								<div class="clear"></div>
+	</div>
+	<div class="menu_footer">
+		<div><i class="fas fa-clock"></i> <span class="servertime oservertime">Sabado 14 de Mar 01:49:05</span></div>
+		<div><i class="far fa-copyright"></i> Copyright 2moons 2021</div>
+	</div>
+</div>
+<div style="height:0; overflow:hidden;" loop="false;" id="music">
+    <audio id="beepataks" preload="auto">
+        <source src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/sirena.mp3">
+        <source src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/sirena.ogg">
+    </audio>
+    <audio id="msgaudio" preload="auto">
+        <source src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/msg.mp3">
+        <source src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/msg.ogg">
+    </audio>
+    <script type="text/javascript">
+		var ataks = "0";
+		var spio = "0";
+        var unic = "0";
+		var rakets = "0";
+		var msg = 0;
+		document.getElementById('msgaudio').volume=0.1;
+		document.getElementById('beepataks').volume=0.1;
+	</script>
+</div>
+
+<div id="page">
+	
+
+<div class="content_page" style="width: 95%;">
+	<div class="title">
+		Chat Global
+	</div>
+
+	<div>
+		<iframe src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/index.html" style="border: 0px;width:100%;height:800px;" allowtransparency="true"></iframe>
+	</div>
+</div>
+
+</div>
+
+
+<div id="planet_menu" style="z-index:6800;">
+	<div id="planet_menu_header">
+	<a href="javascript:linkin(1);" class="pm_text" id="planet_menu_link1"><font color="lime">Mostrar</font></a>
+	<a href="javascript:linkin(0);" class="pm_text" id="planet_menu_link2" style="display:none;"><font color="red">Ocultar</font></a>
+	</div>
+	<div id="planet_menu_content" style="display:none;">
+	<table style="width: 100%; background: none; z-index: 900;" class="center">
+		<tbody><tr>
+						<td style="background: none; border: none;">
+				<img class="active_urlpalnet" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/trockenplanet07.png" style="cursor:pointer;" width="20" height="20" url="cp=1580">
+			</td>
+			
+		</tr>
+		<tr>
+						<td>
+				<span class="active_urlpalnet" style="cursor:pointer; color: red; font-size: 10px;" url="cp=1580">
+				Principal
+				</span>
+			</td>
+			
+		</tr>
+		<tr>
+						<td>
+				<span class="active_urlpalnet" style="cursor:pointer; color: red;font-size: 10px;" url="cp=1580">[3:238:3]</span>
+			</td>
+			
+		</tr>
+	</tbody></table>
+	</div>
+</div>
+<script type="text/javascript">
+
+function linkin(status) {
+
+	switch(status)
+	{
+		case 1:
+			$('#planet_menu_content').slideDown(500);
+			$('#planet_menu_link1').hide();
+			$('#planet_menu_link2').fadeIn();
+			$.cookie('PlanetMenu', 1);
+		break;
+		case 0:
+			$('#planet_menu_link2').hide();
+			$('#planet_menu_content').slideUp(500);
+			$('#planet_menu_link1').fadeIn();
+			$.cookie('PlanetMenu', 0);
+		break;
+	}
+}
+</script>
+
+
+<script type="text/javascript" src="Chat%20Global%20-%20viernes%202%20pm%20-%202moons_files/crisp.js"></script>
+<div class="clear"></div>
+<div id="footer">
+	</div>
+
+</body></html>
